@@ -1,0 +1,263 @@
+body{
+    font-size: 14px;
+    line-height: 1;
+    font-family:'Poppins', sans-serif; 
+    min-height: 100vh;
+    background-color: #f3f3f3
+}
+
+/*Header Setting*/
+.container{
+  
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    
+    
+ 
+}
+
+.header{  
+    background-color: #141618;
+}
+.header .container{
+    height: 60px;
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+}
+.header-logo{
+   
+    letter-spacing: 2px;
+    border-bottom: 5px solid rgba(255, 255, 255,.8);
+    border-radius: 35px;
+    padding-bottom:5px ;
+    transition: all .8s;
+
+}
+.header-logo:hover{
+    border-bottom: 5px solid #fff;
+}
+.header-logo h2{
+    color: rgba(255, 255, 255,.8);
+    font-size: 24px;
+    transition: all .8s;
+}
+.header-logo h2:hover{
+    color: #fff;
+}
+.menu ul{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.menu ul li{ 
+    padding: 0 20px;  
+    position: relative;
+}
+.menu ul li a{
+    color: rgba(255, 255, 255,.8) ;
+    transition: all .8s;
+}
+.menu ul li a:hover{
+    color: #fff;
+}
+.menu ul li a i{
+    margin-left: 7px;
+    vertical-align: bottom;
+}
+.dropdown li{
+    opacity: 0;
+    z-index: 1;
+}
+.menu ul li:hover .dropdown li{
+    opacity: 1;
+} 
+.menu ul li .dropdown {
+
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;  
+}
+
+.menu ul li .dropdown li {
+    padding:  10px;
+    border-bottom: 1px solid gray;
+    background-color: #232425;
+    width: 100px;
+    transition: all .8s;
+}
+.menu ul li .dropdown li a{
+    text-align: center;
+}
+.menu ul li ul li:hover{
+    background-color: #141618;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   flex-direction: column;
+    flex-wrap:wrap;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+  
+  
+  }
+  footer .container{
+    flex-direction: row;
+  }
+  footer .container .sec{
+    margin-right: 30px;
+  }
+  footer .container .sec.aboutus{
+    width: 40%;
+  }
+  footer .container .sec h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom:15px ;
+    font-size: 24px;
+  }
+  footer .container  h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+  
+  }
+  footer p{
+    color: #999;
+  }
+  .sci{
+    margin-top: 20px;
+    display: flex;
+  }
+  .sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: all .7s;
+  }
+  .sci li a:hover{
+    background: #f00;
+  }
+  .sci li a i{
+    color:#fff;
+    font-size: 20px;
+  }
+  .quickLinks{
+    position: relative;
+    width: 25%;
+  }
+  
+  .quickLinks ul li a{
+    color: #999;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .3s;
+  }
+  .quickLinks ul li a:hover{
+    color: #fff;
+  }
+  .contact{
+    width: calc(35%-60px);
+    margin-right: 0 !important;
+  }
+  .contact .info{
+    position: relative;
+  
+  }
+  .contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+  
+  }
+  .contact .info li span:nth-child(1){
+    color:#fff ;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .contact .info li span{
+    color: #999;
+  }
+  .contact .info li  a{
+    color: #999;
+    transition: all .5s;
+  }
+  .contact .info li  a:hover{
+    color: #fff;
+  }
+  .copyright{
+    width: inherit;
+    background: #181818;
+    padding: 8px 100px ;
+    text-align:center ;
+    color: #999;
+  }
+  /*footer  Responsive*/
+  @media (max-width:991px){
+    footer{
+      padding: 40px;
+    }
+    footer .container{
+      flex-direction: column;
+    }
+    footer .container .sec{
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus,
+    .quickLinks,
+    .contact{
+      width: 100%;
+    }
+    .copyright{
+      padding: 8px 40px;
+    }
+  }
+
+
+
+span{
+    font-size:15px;
+}
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#4183D7;
+}
+
+
